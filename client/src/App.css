@@ -1,0 +1,21 @@
+.label {
+    justify-content: start !important;
+    text-align: start !important;
+}
+.card {
+    text-align: center;
+}
+.btn {
+    max-width: 30%;
+    display: inline-block;
+}
+.form-group {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    max-width: 750px;
+}
+.hide {
+    display: none;
+}
