@@ -5,7 +5,7 @@ import SignUp from "./pages/SignUp";
 import Home from "./pages/Home";
 import Wrapper from "./components/Wrapper";
 import Footer from "./components/Footer";
-import "bootstrap/dist/css/bootstrap.min.css";
+// import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
