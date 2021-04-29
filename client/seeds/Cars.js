@@ -119,6 +119,7 @@ const users = [
 
 function Cars() {
   const [state, setUsers] = useState([]);
+  console.log(state)
 
   useEffect(() => {
     setUsers({ users: users });

@@ -119,7 +119,7 @@ const users = [
 
 function Exercises() {
   const [state, setUsers] = useState([]);
-
+  console.log(state)
   useEffect(() => {
     setUsers({ users: users });
     console.log(users);
