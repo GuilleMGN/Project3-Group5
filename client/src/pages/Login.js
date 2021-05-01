@@ -10,8 +10,8 @@ function Login() {
                         <form className="form-group">
                             <h1>PurrChase Login</h1>
                             <hr />
-                            <label className="label">Username </label>
-                            <input className="form-control" placeholder="Your Username"></input>
+                            <label className="label">Email </label>
+                            <input className="form-control" placeholder="Your Email"></input>
                             <label className="label">Password </label>
                             <input className="form-control" placeholder="Your Password" type="password"></input>
                             <br />

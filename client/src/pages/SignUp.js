@@ -10,8 +10,8 @@ function SignUp() {
                         <form className="form-group">
                             <h1>Create an Account</h1>
                             <hr />
-                            <label className="label">Create your Username </label>
-                            <input className="form-control" placeholder="Username"></input>
+                            <label className="label">Enter your Email </label>
+                            <input className="form-control" placeholder="Email"></input>
                             <label className="label">Create your Password </label>
                             <input className="form-control" placeholder="Password" type="password"></input>
                             <label className="label">Confirm Password </label>
