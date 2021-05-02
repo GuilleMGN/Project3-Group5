@@ -6,7 +6,6 @@ import Home from "./pages/Home";
 import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
-// import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 
