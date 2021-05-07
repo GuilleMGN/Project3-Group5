@@ -1,4 +1,6 @@
-export default function Profile() {
+import React from "react";
+
+function Profile() {
   return (
     <div className="container">
       <div className="App">
@@ -59,11 +61,11 @@ export default function Profile() {
                 {/* My background is brand strategy, visual design, and */}
                 {/* account management inform her mindful but competitive approach. */}
               </p>
-              <a href="," class="card-link">
-                Card link
+              <a href="/login" class="card-link">
+                Login
               </a>
-              <a href="," class="card-link">
-                Another link
+              <a href="/signup" class="card-link">
+                Signup
               </a>
             </div>
           </div>
@@ -89,3 +91,5 @@ export default function Profile() {
     </div>
   );
 }
+
+export default Profile;
