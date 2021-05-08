@@ -5,7 +5,7 @@ function Welcome() {
     <div className="container">
       <span className="hide">{document.title = "Welcome to PurrChase"}</span>
       <div className="jumbo">
-        <h1 className="display-4">Welcome to PurrChase! <i class="fas fa-cat"></i></h1>
+        <h1 className="display-4">Welcome to PurrChase! <i className="fas fa-cat"></i></h1>
         <hr />
         <p className="lead">
           Join today to earn a bonus <img src="./logo192.png" className="purrcoin" alt="." />
