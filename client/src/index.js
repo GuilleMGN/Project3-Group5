@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-// import App from './App';
+ import App from './App';
 // import Expense from "./components/Tracker/Expense"
 import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -9,7 +9,8 @@ import Profile from "./pages/Profile"
 
 ReactDOM.render(
   <React.StrictMode>
-    <Profile />
+    {/* <Profile /> */}
+    <App/>
     {/* <Expense/> */}
   </React.StrictMode>,
   document.getElementById('root')
