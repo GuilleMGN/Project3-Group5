@@ -9,7 +9,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App/>
     {/* <Expense/> */}
   </React.StrictMode>,
   document.getElementById('root')
