@@ -4,8 +4,8 @@ import HomeLayout from "../components/HomeLayout/HomeLayout"
 function Home() {
   return (
     <div>
-      <br></br>
-      <HomeLayout/>
+      <br />
+      <HomeLayout />
     </div>
   );
 }
