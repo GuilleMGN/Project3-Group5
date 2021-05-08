@@ -22,6 +22,7 @@ router.route("/:id")
 router.post("/signup", (req, res) => {
     // Form validation
     const { errors, isValid } = validateRegisterInput(req.body);
+    console.log(req.body);
     // Check validation
     if (!isValid) {
         return res.status(400).json(errors);
@@ -52,6 +53,7 @@ router.post("/signup", (req, res) => {
 
 router.post("/login", (req, res) => {
     // Form validation
+    console.log(req.body);
     const { errors, isValid } = validateLoginInput(req.body);
     // Check validation
     if (!isValid) {
@@ -86,6 +88,7 @@ router.post("/login", (req, res) => {
                             success: true,
                             token: "Bearer " + token
                         });
+                        res.redirect("/");
                     }
                 );
             } else {

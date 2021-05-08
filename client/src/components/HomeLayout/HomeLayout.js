@@ -12,7 +12,10 @@ const HomeLayout = () => {
         </p>
         <hr class="my-4"></hr>
         <p>
-          Join the Community today and get <strong><em>500 Points !!</em></strong>
+          Join the Community today and get{" "}
+          <strong>
+            <em>500 Points !!</em>
+          </strong>
         </p>
         <p class="lead">
           <a class="btn btn-primary btn-lg" href="/" role="button">
@@ -75,7 +78,10 @@ const HomeLayout = () => {
         <div class="container">
           <h1 class="display-4">Start Today</h1>
           <p class="lead">
-            Prepare to be your own boss and manage your own portfolio with <strong><em>PurrCoin.</em></strong>
+            Prepare to be your own boss and manage your own portfolio with{" "}
+            <strong>
+              <em>PurrCoin.</em>
+            </strong>
           </p>
         </div>
       </div>
@@ -129,7 +135,6 @@ const HomeLayout = () => {
         </div>
       </div>
       <br></br>
-      
     </div>
   );
 };
