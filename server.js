@@ -6,6 +6,8 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 const passport = require("passport");
 const users = require("./routes/api/users");
+var multer = require('multer');
+
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
