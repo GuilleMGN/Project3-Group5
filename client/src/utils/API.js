@@ -6,6 +6,9 @@ const API = {
     },
     login: function (dbObject) {
         return axios.post("/api/users/login", dbObject); 
+    },
+    getUsers: function () {
+        return axios.get("/api/users");
     }
 }
 

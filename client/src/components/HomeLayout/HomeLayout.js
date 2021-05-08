@@ -4,10 +4,10 @@ import "./HomeLayout.css";
 const HomeLayout = () => {
   return (
     <div className="container">
-      <div class="jumbo">
-        <h1 class="display-4">Hello, PurrCoin User!</h1>
+      <div className="jumbo">
+        <h1 className="display-4">Hello, PurrCoin User!</h1>
         <p><img src="./logo192.png" className="purrcoin" alt="." /> 500</p>
-        <hr class="my-4"></hr>
+        <hr className="my-4"></hr>
       </div>
       <p className="lead">Explore Many Categories</p>
       <div className="row row-cols-1 row-cols-md-3 g-4">
