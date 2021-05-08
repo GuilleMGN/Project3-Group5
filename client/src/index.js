@@ -5,6 +5,7 @@ import App from './App';
 // import Expense from "./components/Tracker/Expense"
 import reportWebVitals from './reportWebVitals';
 import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.min.js";
 // import Profile from "./pages/Profile"
 
 ReactDOM.render(
