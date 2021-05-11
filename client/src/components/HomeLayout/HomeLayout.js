@@ -1,11 +1,11 @@
 import React from "react";
 import "./HomeLayout.css";
 
-const HomeLayout = () => {
+const HomeLayout = (props) => {
   return (
     <div className="container">
       <div class="jumbotron">
-        <h1 class="display-4">Hello, PurrCoin!</h1>
+        <h1 class="display-4">Hello, PurrCoin! {props.name}</h1>
         <p class="lead">
           {/* This is a simple hero unit, a simple jumbotron-style component for
           calling extra attention to featured content or information. */}
