@@ -16,7 +16,7 @@ import { useState } from "react";
 
 function App() {
   const [userName, useUserName] = useState("");
-  const [isLogged, useIsloged] = useState(false);
+  //const [isLogged, useIsloged] = useState(false);
 
   return (
     <Router>
@@ -28,18 +28,20 @@ function App() {
               {<Welcome login={userName} />}
             </Route>
             <Route exact path="/home">
-              {(isLogged && <Home login={userName} />) || (
-                <Login setlogin={useUserName} />
-              )}
+              <Home login={userName} />
             </Route>
             <Route exact path="/login">
               <Login setlogin={useUserName} />
             </Route>
-
-            <Route exact path="/signup" component={SignUp} />
-
-            <Route exact path="/profile" component={Profile} />
-            <Route exact path="/stats" component={Stats} />
+            <Route exact path="/signup">
+              <SignUp />
+            </Route>
+            <Route exact path="/profile">
+              <Profile />
+            </Route>
+            <Route exact path="/stats">
+              <Stats />
+            </Route>
             <Route component={NotFound} />
           </Switch>
         </Wrapper>
