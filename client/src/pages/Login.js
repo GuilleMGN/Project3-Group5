@@ -13,8 +13,9 @@ const styles = {
 };
 
 
-function Login() {
+function Login(props) {
  
+  var changed = props.setlogin
   const history = useHistory();
     const [state, setState] = useState({
       email: "",
@@ -37,7 +38,7 @@ function Login() {
     };
     API.login(userData)
     .then(res => {
-      //console.log(res)
+       console.log(res)
       let errors = res.data.errors
       console.log(errors)
       if(errors !== undefined)
@@ -55,6 +56,7 @@ function Login() {
           password: "",
           
           });
+          changed(res.data.user);
         history.push('/home');
       }
     })

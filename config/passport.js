@@ -14,7 +14,7 @@ module.exports = passport => {
             User.findById(jwt_payload.id)
                 .then(user => {
                     if (user) {
-                        console.log("we the jpr",user)
+                        console.log("webToken",user)
                         return done(null, user);
                     }
                     return done(null, false);
