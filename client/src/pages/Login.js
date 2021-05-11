@@ -1,60 +1,99 @@
-import React, { Component } from "react";
+//import React, { Component } from "react";
+import { useState } from "react";
+import { useHistory } from "react-router-dom";
 import API from "../utils/API";
 
-class Login extends Component {
-  constructor() {
-    super();
-    this.state = {
+const styles = {
+  card: {
+   
+    color: "red",
+    
+  },
+
+};
+
+
+function Login() {
+ 
+  const history = useHistory();
+    const [state, setState] = useState({
       email: "",
       password: "",
-      errors: {}
-    };
-  }
-  onChange = e => {
-    this.setState({ [e.target.id]: e.target.value });
-  };
-  onSubmit = e => {
+    });
+
+    const [error, setError] = useState({
+      email: "",
+      password: "",
+    });
+  
+  // onChange = e => {
+  //   this.setState({ [e.target.id]: e.target.value });
+  // };
+  const onSubmit = e => {
     e.preventDefault();
     const userData = {
-      email: this.state.email,
-      password: this.state.password
+      email: state.email,
+      password: state.password
     };
-    API.login(userData).then(res => console.log(res));
-    console.log(userData);
+    API.login(userData)
+    .then(res => {
+      //console.log(res)
+      let errors = res.data.errors
+      console.log(errors)
+      if(errors !== undefined)
+      { setError(
+        {
+          email:errors.email,
+          password:errors.password,
+        });
+        
+
+      }else{
+        setError(
+          {
+          email: "",
+          password: "",
+          
+          });
+        history.push('/home');
+      }
+    })
+    .catch(err => console.log(err));
 
   };
-  render() {
-    const { errors } = this.state;
+
     return (
       <div className="container">
         <span className="hide">{document.title = "PurrChase Login"}</span>
         <div className="card">
           <div className="row">
             <div className="col-lg-12">
-              <form noValidate onSubmit={this.onSubmit} className="form-group">
+              <form noValidate onSubmit={onSubmit} className="form-group">
                 <h1>PurrChase Login</h1>
                 <hr />
                 <label className="label">Email Address </label>
                 <input
                   className="form-control"
                   placeholder="someone@example.com"
-                  onChange={this.onChange}
-                  value={this.state.email}
-                  error={errors.email}
+                  onChange={(e) => setState({...state,email:e.target.value})}
+                  //value={this.state.email}
+                  //error={errors.email}
                   id="email"
                   type="email"
                 />
+                <p style={styles.card}>{error.email}</p>
                 <br />
                 <label className="label">Password </label>
                 <input
                   className="form-control"
                   placeholder="Enter your password"
-                  onChange={this.onChange}
-                  value={this.state.password}
-                  error={errors.password}
+                  onChange={(e) => setState({...state,password:e.target.value})}
+                  //value={this.state.password}
+                  //error={errors.password}
                   id="password"
                   type="password"
                 />
+                <p style={styles.card}>{error.password}</p>
                 <br />
                 <button className="btn btn-outline-info" type="submit">Login </button>
                 <hr />
@@ -67,7 +106,7 @@ class Login extends Component {
         </div>
       </div>
     );
-  }
+  
 }
 
 export default Login;
