@@ -4,80 +4,80 @@ import "./HomeLayout.css";
 const HomeLayout = (props) => {
   return (
     <div className="container">
-      <div class="jumbotron">
-        <h1 class="display-4">Hello, PurrCoin! {props.name}</h1>
-        <p class="lead">
+      <div className="jumbotron">
+        <h1 className="display-4">Hello, PurrCoin! {props.name}</h1>
+        <p className="lead">
           {/* This is a simple hero unit, a simple jumbotron-style component for
           calling extra attention to featured content or information. */}
         </p>
-        <hr class="my-4"></hr>
+        <hr className="my-4"></hr>
         <p>
           Join the Community today and get{" "}
           <strong>
             <em>500 Points !!</em>
           </strong>
         </p>
-        <p class="lead">
-          <a class="btn btn-primary btn-lg" href="/" role="button">
+        <p className="lead">
+          <a className="btn btn-primary btn-lg" href="/" role="button">
             Learn more
           </a>
         </p>
       </div>
-      <p class="lead">Categories</p>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
+      <p className="lead">Categories</p>
+      <div className="row row-cols-1 row-cols-md-3 g-4">
+        <div className="col">
+          <div className="card h-100">
             <img src="./car.jpeg" class="card-img-top" alt=""></img>
-            <div class="card-body">
-              <h5 class="card-title">Cars</h5>
-              <p class="card-text">
+            <div className="card-body">
+              <h5 className="card-title">Cars</h5>
+              <p className="card-text">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
               </p>
             </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+            <div className="card-footer">
+              <small className="text-muted">Last updated 3 mins ago</small>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="./weights.jpeg" class="card-img-top" alt="..."></img>
-            <div class="card-body">
-              <h5 class="card-title">Work-Out</h5>
-              <p class="card-text">
+        <div className="col">
+          <div className="card h-100">
+            <img src="./weights.jpeg" className="card-img-top" alt="..."></img>
+            <div className="card-body">
+              <h5 className="card-title">Work-Out</h5>
+              <p className="card-text">
                 This card has supporting text below as a natural lead-in to
                 additional content.
               </p>
             </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+            <div className="card-footer">
+              <small className="text-muted">Last updated 3 mins ago</small>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="./speakers.jpeg" class="card-img-top" alt="..."></img>
-            <div class="card-body">
-              <h5 class="card-title">Accessories</h5>
-              <p class="card-text">
+        <div className="col">
+          <div className="card h-100">
+            <img src="./speakers.jpeg" className="card-img-top" alt="..."></img>
+            <div className="card-body">
+              <h5 className="card-title">Accessories</h5>
+              <p className="card-text">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This card has even longer content
                 than the first to show that equal height action.
               </p>
             </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+            <div className="card-footer">
+              <small className="text-muted">Last updated 3 mins ago</small>
             </div>
           </div>
         </div>
       </div>
       <br></br>
-      <div class="jumbotron jumbotron-fluid jumbo">
-        <div class="container">
-          <h1 class="display-4">Start Today</h1>
-          <p class="lead">
+      <div className="jumbotron jumbotron-fluid jumbo">
+        <div className="container">
+          <h1 className="display-4">Start Today</h1>
+          <p className="lead">
             Prepare to be your own boss and manage your own portfolio with{" "}
             <strong>
               <em>PurrCoin.</em>
@@ -85,51 +85,51 @@ const HomeLayout = (props) => {
           </p>
         </div>
       </div>
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col">
-          <div class="card h-100">
-            <img src="./book.jpeg" class="card-img-top" alt="..."></img>
-            <div class="card-body">
-              <h5 class="card-title">Books</h5>
-              <p class="card-text">
+      <div className="row row-cols-1 row-cols-md-3 g-4">
+        <div className="col">
+          <div className="card h-100">
+            <img src="./book.jpeg" className="card-img-top" alt="..."></img>
+            <div className="card-body">
+              <h5 className="card-title">Books</h5>
+              <p className="card-text">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This content is a little bit
                 longer.
               </p>
             </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+            <div className="card-footer">
+              <small className="text-muted">Last updated 3 mins ago</small>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="..." class="card-img-top" alt="..."></img>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
+        <div className="col">
+          <div className="card h-100">
+            <img src="..." className="card-img-top" alt="..."></img>
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">
                 This card has supporting text below as a natural lead-in to
                 additional content.
               </p>
             </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+            <div className="card-footer">
+              <small className="text-muted">Last updated 3 mins ago</small>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card h-100">
-            <img src="..." class="card-img-top" alt="..."></img>
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">
+        <div className="col">
+          <div className="card h-100">
+            <img src="..." className="card-img-top" alt="..."></img>
+            <div className="card-body">
+              <h5 className="card-title">Card title</h5>
+              <p className="card-text">
                 This is a wider card with supporting text below as a natural
                 lead-in to additional content. This card has even longer content
                 than the first to show that equal height action.
               </p>
             </div>
-            <div class="card-footer">
-              <small class="text-muted">Last updated 3 mins ago</small>
+            <div className="card-footer">
+              <small className="text-muted">Last updated 3 mins ago</small>
             </div>
           </div>
         </div>
