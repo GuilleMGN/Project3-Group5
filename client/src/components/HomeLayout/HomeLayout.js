@@ -1,7 +1,7 @@
 import React from "react";
 import "./HomeLayout.css";
 
-const HomeLayout = () => {
+const HomeLayout = (props) => {
   return (
     <div className="container">
       <div className="jumbo">
