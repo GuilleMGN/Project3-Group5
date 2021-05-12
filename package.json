@@ -27,7 +27,10 @@
     "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
+    "concurrently": "^6.0.2",
+    "cors": "^2.8.5",
     "express": "^4.17.1",
+    "if-env": "^1.0.4",
     "is-empty": "^1.2.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.12.5",
@@ -35,8 +38,6 @@
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
     "react-charts": "^2.0.0-beta.7",
-    "concurrently": "^6.0.2",
-    "if-env": "^1.0.4",
     "validator": "^13.6.0"
   },
   "devDependencies": {
