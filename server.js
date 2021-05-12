@@ -7,11 +7,13 @@ const PORT = process.env.PORT || 3001;
 const passport = require("passport");
 const users = require("./routes/api/users");
 var multer = require('multer');
+const path = require("path")
 
 
 // Define middleware here
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
+app.use(express.static(path.join(__dirname, "client", "build")))
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 // Serve up static assets (usually on heroku)
@@ -35,7 +37,9 @@ mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/purrchase",
     useUnifiedTopology: true
   }
 );
-
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
 // Start the API server
 app.listen(PORT, function () {
   console.log(`==> API Server now listening on PORT ${PORT}!`);

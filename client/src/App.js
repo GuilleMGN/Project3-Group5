@@ -8,6 +8,7 @@ import Stats from "./pages/Stats";
 import Wrapper from "./components/Wrapper";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Add from "./ManageItemForm/ManageForm"
 import "./App.css";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { Switch } from "react-router-dom";
@@ -41,6 +42,9 @@ function App() {
             </Route>
             <Route exact path="/stats">
               <Stats />
+            </Route>
+            <Route exact path="/add">
+              <Add />
             </Route>
             <Route component={NotFound} />
           </Switch>
