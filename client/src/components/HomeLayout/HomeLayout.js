@@ -87,8 +87,8 @@ const HomeLayout = () => {
                 lead-in to additional content. This card has even longer content
                 than the first to show that equal height action.
               </p>
-              <div class="card-footer">
-                <small class="text-muted">Last updated 3 mins ago</small>
+              <div className="card-footer">
+                <small className="text-muted">Last updated 3 mins ago</small>
               </div>
             </div>
           </div>
