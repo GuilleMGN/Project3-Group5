@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom"
 
 function Header() {
   const activeStyle = {
-    color : "#f1c232"
+    color: "#f1c232"
   }
   return (
     <>
@@ -17,7 +17,7 @@ function Header() {
             className="navbar-toggler"
             type="button"
             data-toggle="collapse"
-            data-target="/navbarSupportedContent"
+            data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent"
             aria-expanded="false"
             aria-label="Toggle navigation"
@@ -31,64 +31,33 @@ function Header() {
           >
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
-                <NavLink  activeStyle={activeStyle} className="nav-link" exact to="/home">
+                <NavLink activeStyle={activeStyle} className="nav-link" exact to="/home">
                   {/* <i className="fa fa-home"></i> */}
                   <h5> Home </h5>
                   <span className="sr-only">(current)</span>
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink  activeStyle={activeStyle} className="nav-link active"  to="/Categories">
-                  {/* <i className="fa fa-envelope-o">
-                  <span className="badge badge-danger">11</span>
-                </i> */}
+                <NavLink activeStyle={activeStyle} className="nav-link active" to="/categories">
                   <h5>Categories</h5>
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink  activeStyle={activeStyle} className="nav-link active"  to="/Profile">
-                  {/* <i className="fa fa-envelope-o">
-                  <span className="badge badge-danger">11</span>
-                </i> */}
+                <NavLink activeStyle={activeStyle} className="nav-link active" to="/profile">
                   <h5>Profile</h5>
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink  activeStyle={activeStyle} className="nav-link active"  to="/stats">
-                  {/* <i className="fa fa-envelope-o">
-                  <span className="badge badge-warning">11</span>
-                </i> */}
+                <NavLink activeStyle={activeStyle} className="nav-link active" to="/stats">
                   <h5>Stats</h5>
                 </NavLink>
               </li>
               <li className="nav-item">
-                <NavLink  activeStyle={activeStyle} className="nav-link active"  to="/add">
-                  {/* <i className="fa fa-envelope-o">
-                  <span className="badge badge-warning">11</span>
-                </i> */}
+                <NavLink activeStyle={activeStyle} className="nav-link active" to="/add">
                   <h5>Add</h5>
                 </NavLink>
               </li>
-            
             </ul>
-            {/* <ul className="navbar-nav ">
-            <li className="nav-item">
-              <NavLink className="nav-link" exact to="/">
-                <i className="fa fa-bell">
-                  <span className="badge badge-info">11</span>
-                </i>
-                Test
-              </NavLink>
-            </li>
-            <li className="nav-item">
-              <NavLink className="nav-link" exact to="/">
-                <i className="fa fa-globe">
-                  <span className="badge badge-success">11</span>
-                </i>
-                Test
-              </NavLink>
-            </li>
-          </ul> */}
             <form className="form-inline my-2 my-lg-0">
               <input
                 className="form-control mr-sm-2"

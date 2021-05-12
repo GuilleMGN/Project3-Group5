@@ -5,6 +5,7 @@ class Profile extends Component {
   render() {
     return (
       <div className="container">
+        <span className="hide">{document.title = "Your Profile"}</span>
         <br />
         <h1 className="display-4 center"> Your Profile</h1>
         <div className="row">

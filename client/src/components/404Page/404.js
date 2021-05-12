@@ -7,7 +7,7 @@ function NotFound() {
     <div>
       <div id="main">
         <div className="fof">
-          <h1>Error 404</h1><br></br><hr></hr>
+          <h1>Error 404</h1> <br /> <hr />
         <Link to = "/" className="btn btn-outline-danger">Go Home</Link>
         </div>
       </div>

@@ -6,7 +6,6 @@ const app = express();
 const PORT = process.env.PORT || 3001;
 const passport = require("passport");
 const users = require("./routes/api/users");
-var multer = require('multer');
 const path = require("path")
 
 

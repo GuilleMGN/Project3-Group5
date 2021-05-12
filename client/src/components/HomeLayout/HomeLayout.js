@@ -4,6 +4,7 @@ import "./HomeLayout.css";
 const HomeLayout = () => {
   return (
     <div className="container">
+      <span className="hide">{document.title = "PurrChase Home"}</span>
       <div className="jumbo">
         <h1 className="display-4">Hello, PurrCoin User!</h1>
         <p><img src="./logo192.png" className="purrcoin" alt="." /> 500</p>
@@ -87,9 +88,9 @@ const HomeLayout = () => {
                 lead-in to additional content. This card has even longer content
                 than the first to show that equal height action.
               </p>
-              <div className="card-footer">
+              {/* <div className="card-footer">
                 <small className="text-muted">Last updated 3 mins ago</small>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

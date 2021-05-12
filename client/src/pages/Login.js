@@ -5,16 +5,11 @@ import API from "../utils/API";
 
 const styles = {
   card: {
-   
     color: "red",
-    
   },
-
 };
 
-
 function Login(props) {
- 
   var changed = props.setlogin
   const history = useHistory();
     const [state, setState] = useState({
@@ -47,23 +42,18 @@ function Login(props) {
           email:errors.email,
           password:errors.password,
         });
-        
-
-      }else{
+      } else{
         setError(
           {
           email: "",
           password: "",
-          
           });
           changed(res.data.user);
         history.push('/home');
       }
     })
     .catch(err => console.log(err));
-
   };
-
     return (
       <div className="container">
         <span className="hide">{document.title = "PurrChase Login"}</span>
@@ -108,7 +98,6 @@ function Login(props) {
         </div>
       </div>
     );
-  
 }
 
 export default Login;

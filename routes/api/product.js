@@ -1,7 +1,6 @@
 const router = require("express").Router;
 const Product = require("../../models/product")
 const ProductControllers = require("../../controllers/ProductControllers");
-console.log(Product)
 
 router.route("/")
    .get(ProductControllers.findAll)
