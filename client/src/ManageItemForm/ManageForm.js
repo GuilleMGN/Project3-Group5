@@ -72,13 +72,13 @@ class Add extends Component {
                   type="number"
                 />
                 <br />
-                <div class="input-group mb-3">
+                <div className="input-group mb-3">
                   <input
                     type="file"
-                    class="form-control"
+                    className="form-control"
                     id="inputGroupFile02"
                   ></input>
-                  <label htmlFor="upload" class="input-group-text" for="inputGroupFile02">
+                  <label htmlFor="upload" className="input-group-text">
                     Upload
                   </label>
                 </div>
