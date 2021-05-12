@@ -61,34 +61,15 @@ function Header() {
                   <h5>Stats</h5>
                 </NavLink>
               </li>
-              {/* <li className="nav-item dropdown">
-              <NavLink
-                className="nav-link dropdown-toggle"
-                exact to="/"
-                id="navbarDropdown"
-                role="button"
-                data-toggle="dropdown"
-                aria-haspopup="true"
-                aria-expanded="false"
-              >
-                <i className="fa fa-envelope-o">
-                  <span className="badge badge-primary">11</span>
-                </i>
-                Dropdown
-              </NavLink>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <NavLink className="dropdown-item" exact to="/">
-                  Action
+              <li className="nav-item">
+                <NavLink  activeStyle={activeStyle} className="nav-link active"  to="/add">
+                  {/* <i className="fa fa-envelope-o">
+                  <span className="badge badge-warning">11</span>
+                </i> */}
+                  <h5>Add</h5>
                 </NavLink>
-                <NavLink className="dropdown-item" exact to="/">
-                  Another action
-                </NavLink>
-                <div className="dropdown-divider"></div>
-                <NavLink className="dropdown-item" exact to="/">
-                  Something else here
-                </NavLink>
-              </div>
-            </li> */}
+              </li>
+            
             </ul>
             {/* <ul className="navbar-nav ">
             <li className="nav-item">
