@@ -77,7 +77,7 @@ function Welcome() {
         </div>
         <div className="col">
           <div className="card h-100">
-            <img src="..." className="card-img-top" alt="..."></img>
+            <img src="./clothing.jpeg" className="card-img-top" alt="..."></img>
             <div className="card-body">
               <h5 className="card-title">Clothing and Fashion</h5>
               <p className="card-text">
@@ -89,7 +89,7 @@ function Welcome() {
         </div>
         <div className="col">
           <div className="card h-100">
-            <img src="..." className="card-img-top" alt="..."></img>
+            <img src="./animals.jpg" className="card-img-top" alt="..."></img>
             <div className="card-body">
               <h5 className="card-title">Pets and Animals</h5>
               <p className="card-text">

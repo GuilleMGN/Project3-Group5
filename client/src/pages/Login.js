@@ -92,6 +92,7 @@ function Login(props) {
                 <h4>Don't have an account? <br />
                   <a href="/signup"> Sign up! </a>
                 </h4>
+                <br />
               </form>
             </div>
           </div>

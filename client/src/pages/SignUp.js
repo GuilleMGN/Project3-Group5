@@ -122,6 +122,7 @@ function SignUp() {
               <h4>Already have an account? <br />
                 <a href="/login"> Login! </a>
               </h4>
+              <br />
             </form>
           </div>
         </div>

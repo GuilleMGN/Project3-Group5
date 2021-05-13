@@ -37,11 +37,11 @@ function Header() {
                   <span className="sr-only">(current)</span>
                 </NavLink>
               </li>
-              <li className="nav-item">
+              {/* <li className="nav-item">
                 <NavLink activeStyle={activeStyle} className="nav-link active" to="/categories">
                   <h5>Categories</h5>
                 </NavLink>
-              </li>
+              </li> */}
               <li className="nav-item">
                 <NavLink activeStyle={activeStyle} className="nav-link active" to="/profile">
                   <h5>Profile</h5>
