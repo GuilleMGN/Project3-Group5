@@ -21,7 +21,6 @@ class Add extends Component {
       title: this.state.title,
       category: this.state.category,
       price: this.state.price,
-      // password2: this.state.password2
     };
     ProductAPI.create(newItem).then((res) => console.log(res));
     console.log(newItem);

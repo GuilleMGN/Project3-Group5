@@ -6,7 +6,7 @@ router.route("/")
    .get(ProductControllers.findAll)
    .post(ProductControllers.create)
 
-router.post("/newStuff", (req,res)=>{
+router.post("/add", (req,res)=>{
     const newProducts = new Product(req.body);
     newProducts.save()
     .then(result=>{

@@ -68,7 +68,7 @@ const HomeLayout = () => {
         </div>
         <div className="col">
           <div className="card h-100">
-            <img src="..." className="card-img-top" alt="clothes"></img>
+            <img src="./clothing.jpeg" className="card-img-top" alt="clothes"></img>
             <div className="card-body">
               <h5 className="card-title">Clothing and Fashion</h5>
               <p className="card-text">
@@ -80,7 +80,7 @@ const HomeLayout = () => {
         </div>
         <div className="col">
           <div className="card h-100">
-            <img src="..." className="card-img-top" alt="animals"></img>
+            <img src="./animals.jpg" className="card-img-top" alt="animals"></img>
             <div className="card-body">
               <h5 className="card-title">Pets and Animals</h5>
               <p className="card-text">
